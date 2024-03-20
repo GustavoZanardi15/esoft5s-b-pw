@@ -1,0 +1,1 @@
+Este é um projeto HTML que cria uma página web sobre o Pokémon Squirtle. O objetivo desta página é fornecer informações sobre Squirtle, suas características, curiosidades, evolução e recursos adicionais.
