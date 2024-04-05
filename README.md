@@ -10,7 +10,7 @@ Clone este repositório:
 
 bash
 Copy code
-git clone [https://github.com/seu-usuario/squirtle-page.git](https://gustavozanardi15.github.io/esoft5s-b-pw/)
+git clone https://github.com/GustavoZanardi15/esoft5s-b-pw.git
 Abra o arquivo index.html em um navegador da web.
 
 Navegue pelas diferentes seções para aprender mais sobre o Pokémon Squirtle.
