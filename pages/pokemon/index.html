@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página do Pokémon Squirtle</title>
+
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <a href="../../index.html">
+        <h1>Squirtle</h1>
+      </a>
+    </header>
+
+    <main>
+      <section id="info-pokemon" aria-labelledby="info-pokemon-label">
+        <img />
+      </section>
+    </main>
+
+    <footer aria-label="Rodapé">
+      <p aria-label="Copyright">
+        &copy; 2024 Página do Pokémon Squirtle. Todos os direitos reservados.
+      </p>
+      <p><a href="#header">Voltar para o topo</a></p>
+      <p><a href="mailto:contato@squirtlepage.com">Contato via e-mail</a></p>
+      <p><a href="tel:+5555555555">Telefone: (55) 5555-5555</a></p>
+      <p id="acesso_log"></p>
+      <script>function atualizarContadorVisitas() {
+        let contador = JSON.parse(localStorage.getItem('contadorVisitas'));
+        
+        if (!contador) {
+            contador = {
+                count: 1,
+                lastVisit: new Date().toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+            };
+        } else {
+            contador.count++; 
+            contador.lastVisit = new Date().toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }); // Atualiza a última visita
+        }
+        
+        localStorage.setItem('contadorVisitas', JSON.stringify(contador));
+        
+        const footer = document.querySelector('footer');
+        const contadorElement = document.createElement('p');
+        contadorElement.textContent = `Esta página foi visitada ${contador.count} vezes. A última visita foi: ${contador.lastVisit}`;
+        footer.appendChild(contadorElement);
+    }
+
+    atualizarContadorVisitas();</script>
+    </footer>
+  </body>
+</html>
