@@ -5,6 +5,7 @@ Funcionalidades
 Exibe informações sobre o Pokémon Squirtle, incluindo imagens e descrições.
 Apresenta curiosidades interessantes sobre o Squirtle.
 Mostra as evoluções do Squirtle, permitindo que o usuário clique nas imagens para obter mais informações.
+Além de dar acesso há pokeAPI.
 Como usar
 Clone este repositório:
 
