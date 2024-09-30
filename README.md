@@ -1,1 +1,1 @@
-Atividades complementares feitas durante o primeiro semestr do ano letivo de 2024.
+Atividades complementares feitas durante o primeiro semestre do ano letivo de 2024.
